@@ -1,0 +1,60 @@
+.main_TodoDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    height: auto;
+}
+.myMainDiv{
+    min-height: 100vh;
+    height: auto;
+    background-color: #001a52;
+}
+.childTodoDiv img{
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s ease-in-out infinite alternate-reverse both;
+}
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+.childTodoDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+.eachitem{
+    display: flex;
+    justify-content: space-between;
+    background-color: #072ba0;
+    padding:10px 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+.todoItem :hover{
+    background-color: rgb(255, 255, 255);
+}
+.todoItem :hover span{
+    color: #00319c;
+}
+.todoItem :hover #deleteIcon{
+    color: #811e1e;
+}
+.clearAll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#editIcon{
+    padding-right: 8px;
+}
+.todoItem :hover #editIcon{
+    color: #58a325;
+}
